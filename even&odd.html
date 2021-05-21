@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>LECTURE 5 / p54-LAB</title>
+  <script>
+    function myFunction(array1) {
+      var even = 0;
+      var odd = 0;
+      for (var j = 0; j < 10; j++) {
+        if (array1[j] % 2 === 0) {
+          even = even + 1;
+        } else {
+          odd = odd + 1;
+        }
+      }
+      window.alert("The number of the even items is : " + even);
+      window.alert("the number of the odd items is : " + odd);
+    }
+  </script>
+  <style>
+
+
+  </style>
+</head>
+<body>
+<p>Get 10 numbers input from the user (using array) and count even and
+odd numbers and display with a descriptive message. You should define
+a function for this activity.</p><br>
+<p id ="demo"></p><br>
+<button onclick="myFunction(list1)">Press to get results</button>
+
+<script>
+  var list1 = new Array;
+  for (var i = 0; i < 10; i++) {
+    var x = prompt("Enter item number : " + i);
+    list1.push(x);
+  }
+  document.getElementById("demo").innerHTML= ("The list you entered is : " + list1);
+</script>
+
+</body>
+</html>
+
+
